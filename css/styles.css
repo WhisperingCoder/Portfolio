@@ -1,0 +1,110 @@
+
+/* Primary Text Color #E0E0E0
+Secondary text Color #B0B0B0 */
+
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;400&family=Open+Sans&display=swap');
+/* Primary Font: font-family: 'MuseoModerno', cursive; */
+/* Secondary Font: font-family: 'Open Sans', sans-serif; */
+
+body {
+  background-color: #1B2A41; /* Deep Navy Blue */
+}
+
+h1 {
+  font-family: 'MuseoModerno', cursive;
+  color: #E0E0E0;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  color: #B0B0B0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.myName {
+  font-family: 'MuseoModerno', cursive;
+  color: #E0E0E0;
+  text-decoration: none;
+  font-size: x-large;
+  padding-left: 35px;
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-list a {
+  font-family: 'Open Sans', sans-serif;
+  color: #B0B0B0;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background 0.3s;
+}
+
+.nav-list a:hover {
+  background-color: #3C4A6B;
+  color: #E0E0E0;
+}
+
+.nav-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+#menuBtn {
+  color: #B0B0B0;
+}
+
+.welcome-container {
+  display: flex;
+  align-items: center; 
+  padding-left: 200px;
+  padding-top: 30px;
+  justify-content: space-between; 
+  max-width: 1200px; /* max-width for larger screens */
+}
+
+.intro h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 85px;
+}
+
+.intro p {
+  margin-top: -25px;
+}
+
+.highlight {
+  color: #007BFF;
+  font-family: 'MuseoModerno', cursive;
+}
+
+@media (max-width: 768px) {
+  .nav-list {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      margin-right: 7px;
+      text-align: right;
+  }
+
+  .nav-list.active {
+      display: flex;
+      color: #E0E0E0;
+  }
+
+  .nav-toggle {
+      display: block;
+  }
+}
