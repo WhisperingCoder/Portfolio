@@ -87,6 +87,50 @@ p {
   font-family: 'MuseoModerno', cursive;
 }
 
+button {
+  color: white;
+  background-color: #007BFF;
+  padding: 10px 20px; /* Ample padding for touch devices */
+  font-size: 16px; /* Readable font size */
+  font-family: 'Open Sans', sans-serif;
+  border: none;
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+  background-color: #00FF84; /* Slightly darker shade for hover */
+  color: white;
+}
+
+.intro button {
+  margin-top: 20px;
+}
+
+button:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 0 2px rgba(0,123,255,0.5); /* Custom focus indicator */
+}
+
+.social-media-icons {
+  position: fixed; /* Fixed positioning */
+  top: 50%;       /* Centered vertically */
+  left: 0;        /* Positioned on the left edge */
+  transform: translateY(-50%); /* Adjust for true vertical centering */
+  z-index: 1000;  /* Keep it on top of other elements */
+}
+
+.social-media-icons a {
+  display: block;  /* Stack icons vertically */
+  margin: 10px 0;  /* Space between icons */
+  font-size: 24px; /* Icon size */
+  color: #FFF;     /* Icon color */
+  background-color: #333;  /* Background for better visibility */
+  padding: 10px;   /* Space around the icon */
+  border-radius: 4px; /* Optional rounded corners */
+  transition: background-color 0.3s; /* Transition for hover effect */
+}
+
 @media (max-width: 768px) {
   .nav-list {
       display: none;
