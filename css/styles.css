@@ -35,6 +35,11 @@ p {
   padding-left: 35px;
 }
 
+.myName:hover {
+  color: #007BFF;
+  transition: color 0.3s;
+}
+
 .nav-list {
   list-style-type: none;
   padding: 0;
@@ -53,6 +58,7 @@ p {
 .nav-list a:hover {
   background-color: #3C4A6B;
   color: #E0E0E0;
+
 }
 
 .nav-toggle {
@@ -73,6 +79,26 @@ p {
   max-width: 1200px; /* max-width for larger screens */
 }
 
+.featured-projects {
+  display: flex;
+  align-items: center; 
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 30px;
+  justify-content: space-between; 
+ 
+}
+.featured-projects div {
+  align-items: center;
+}
+
+.project-cube {
+  width: 200px;
+  height: 200px;
+  background: black;
+  margin-bottom: 20px;
+}
+
 .intro h1 {
   font-family: 'Open Sans', sans-serif;
   font-size: 85px;
@@ -84,7 +110,21 @@ p {
 
 .highlight {
   color: #007BFF;
+  transition: color 0.3s;
   font-family: 'MuseoModerno', cursive;
+}
+
+.highlight:hover {
+    color: #00FF84;
+}
+
+.project-tite-text {
+  color: #E0E0E0;
+  font-family: 'MuseoModerno', cursive;
+  font-size: medium;
+  max-width: 200px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 button {
@@ -97,9 +137,13 @@ button {
   cursor: pointer; /* Change cursor to pointer on hover */
   transition: background-color 0.3s; /* Smooth transition for hover effect */
 }
+.project-button {
+  width: 200px;
+  height: 50px
+}
 
 button:hover {
-  background-color: #00FF84; /* Slightly darker shade for hover */
+  background-color: #00FF84; 
   color: white;
 }
 
@@ -110,25 +154,6 @@ button:hover {
 button:focus {
   outline: none; /* Remove default outline */
   box-shadow: 0 0 0 2px rgba(0,123,255,0.5); /* Custom focus indicator */
-}
-
-.social-media-icons {
-  position: fixed; /* Fixed positioning */
-  top: 50%;       /* Centered vertically */
-  left: 0;        /* Positioned on the left edge */
-  transform: translateY(-50%); /* Adjust for true vertical centering */
-  z-index: 1000;  /* Keep it on top of other elements */
-}
-
-.social-media-icons a {
-  display: block;  /* Stack icons vertically */
-  margin: 10px 0;  /* Space between icons */
-  font-size: 24px; /* Icon size */
-  color: #FFF;     /* Icon color */
-  background-color: #333;  /* Background for better visibility */
-  padding: 10px;   /* Space around the icon */
-  border-radius: 4px; /* Optional rounded corners */
-  transition: background-color 0.3s; /* Transition for hover effect */
 }
 
 @media (max-width: 768px) {
