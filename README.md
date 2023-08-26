@@ -4,4 +4,6 @@ Here is my programming portfolio. As of now, it is a work in progress. You'll on
 Check back here for updates!
 
 # Updates
-* Pushed all files from Visual Studio Code. 
+* Pushed all files from Visual Studio Code.  
+* Almost finsihed with welcome page.
+* Started featured projects section.
